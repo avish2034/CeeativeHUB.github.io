@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Creative Studio | Free Bootstrap 4.3.x template</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href=".\themify-icons\css\themify-icons.css">
+  <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+  <meta name="description" content="Start your development with Creative Studio landing page.">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+  <!-- <link rel="stylesheet" href="ie7.css"> -->
+  <!-- <script src="ie7.js"></script> -->
+  <!-- <link rel="stylesheet" href="bootstrap.css"> -->
+  <!-- <script src="bootstrap.js"></script> -->
+  <link rel="stylesheet" href="respos.css">
+  <script src="jq.js"></script>
+</head>
+
+<body>
+  <div class="home"></div>
+  <div id="menu">
+    <div class="nav">
+      <nav>
+        <img src="logo.png" alt="" srcset="" id="logo">
+        <ul>
+          <li><a href="#" id="first"><b>Home</b></a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Service</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#">Team</a></li>
+          <li><a href="#">Testimonial</a></li>
+          <li><a href="#footer">Contact</a></li>
+          <!-- <li><a href="#">Component</a></li> -->
+          <button id="comp">Components</button>
+        </ul>
+
+      </nav>
+    </div>
+    <h1 id="firstline">Small Team With Big Ideas</h1>
+    <p id="secoline">Creative Studio</p>
+    <div class="buttons">
+      <button id="ser" class="se"><a href="#" class="a1">Our Services</a></button>
+      <button id="con"><a href="#" class="a2">Contact US</a></button>
+    </div>
+    <script>
+      $(document).ready(function(){
+        $(".se").hover(function(){
+          $(this).css("transform","rotate(360deg)")
+          $(this).css("transition","1s")
+        },
+        function(){
+          $(this).css("transform","rotate(0deg)")
+          $(this).css("transition",".5s")
+
+        }
+        );
+        
+        $("#con").hover(function(){
+          $(this).css("transform","rotate(360deg)")
+          $(this).css("transition","1s")
+          // $(".a2").css("transform","rotate(360deg)")
+        },
+        function(){
+          $(this).css("transform","rotate(0deg)")
+          $(this).css("transition",".5s")
+          // $(".a2").css("transform","rotate(0deg)")
+        }
+        )
+      })
+    </script>
+  </div>
+  <div class="card">
+    <div class="card1 cardon"><i class="ti-vector"></i>
+      <h3>UI/UX Design</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis laboriosam, delectus tempore ipsum assumenda
+        suscipit!</p>
+    </div>
+    <div class="card2 cardon"><i class="ti-filter"></i>
+      <h3>Web Development</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis laboriosam, delectus tempore ipsum assumenda
+        suscipit!</p>
+    </div>
+    <div class="card3 cardon"><i class="ti-mobile"></i>
+      <h3>App Design</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ea accusantium perferendis, nesciunt voluptas
+        sapiente.</p>
+    </div>
+  </div>
+  <div class="container" id="about">
+    <div class="img" data-aos="fade-up">
+      <img class="img1"src="about.jpg" alt="About">
+    </div>
+    <script>
+      $(document).ready(function(){
+        $(".img1").hover(function(){
+          // $(this).css("padding","6px");
+          $(this).css("scale","1.02");
+          $(this).css("box-shadow", "0px 0px 11px rgb(0 0 0 / 60%)");
+        },
+        function(){
+          // $(this).css("padding","3px");
+          $(this).css("scale","1");
+          $(this).css("box-shadow", "0px 0px 0px rgb(0 0 0 / 60%)");
+        }
+        )
+      });
+    </script>
+    <div class="text" data-aos="fade-down">
+      <h2>We Create</h2>
+      <h1>Awesome Work</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente cupiditate quas, amet harum perferendis
+        minus, cum dolorum obcaecati iste aspernatur voluptatum aut</p>
+      <p>Cum laudantium unde nemo doloribus eligendi quodarum ea vitae dicta. Accusantium vero, ea? Alias, atque libero.
+        Id, ut harum</p>
+      <p>consectetur adipisicing elit. Omnis quidem, quos iure a dolorum illum culpa quia nemo soluta, ratione harum
+        beatae minus doloribus consectetur! Similique tempora sunt doloribus molestias</p>
+    </div>
+  </div>
+  <section>
+    <div class="step" id="services">
+      <div class="container1">
+        <h3>We See</h3>
+        <h1>What Other Don't See.</h1>
+      </div>
+      <div class="badges">
+        <div class="widgets-items" data-aos="fade-right">
+          <i class="ti-notepad"></i>
+          <h1>Planning</h1>
+        </div>
+        <h1 class="h1" data-aos="fade-right">&gt;</h1>
+        <div class="widgets-items" data-aos="fade-right">
+          <i class="ti-layout"></i>
+          <h1>Mockup</h1>
+        </div>
+        <h1 class="h1" data-aos="fade-right">&gt;</h1>
+        <div class="widgets-items" data-aos="fade-left">
+          <i class="ti-filter"></i>
+          <h1>Develop</h1>
+        </div>
+        <h1 class="h1" data-aos="fade-left">&gt;</h1>
+        <div class="widgets-items" data-aos="fade-down-left">
+          <i class="ti-thumb-up"></i>
+          <h1>Provide</h1>
+        </div>
+      </div>
+    </div>
+    <div class="step2"></div>
+  </section>
+
+<div class="serv" id="portfolio">
+  <h2>Makes Happen</h2>
+  <h1>Our Service</h1>
+<div class="services" data-aos="fade-left">
+  <div class=" ano hover col-3 " data-aos="fade-left">
+    <i class="ti-filter"></i>
+    <p>corporis assumenda</p>
+    <p style="color:#a8a9ab;font-weight:400">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis amet saepe et!</p>
+  </div> <div class=" ano hover col-3 "  data-aos="fade-left">
+    <i class="ti-paint-roller"></i>
+    <p>Debitis amet</p>
+    <p style="color:#a8a9ab;font-weight:400">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis amet saepe et!</p>
+  </div> <div class=" ano hover col-3 " data-aos="fade-left">
+    <i class="ti-ruler-pencil"></i>
+    <p>Libero temporibus</p>
+    <p style="color:#a8a9ab;font-weight:400">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis amet saepe et!</p>
+  </div> <div class=" ano hover col-3 "  data-aos="fade-left">
+    <i class="ti-layers"></i>
+    <p>Perspiciatis explicabo</p>
+    <p style="color:#a8a9ab;font-weight:400">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis amet saepe et!</p>
+  </div>
+</div>
+<div class="services"  data-aos="fade-right">
+  <div class=" ano hover col-3 "  data-aos="fade-right">
+    <i class="ti-bolt"></i>
+    <p>Poluptatum</p>
+    <p style="color:#a8a9ab;font-weight:400">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis amet saepe et!</p>
+  </div> <div class=" ano hover col-3 "  data-aos="fade-right">
+    <i class="ti-palette"></i>
+    <p>Nihil dicta</p>
+    <p style="color:#a8a9ab;font-weight:400">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis amet saepe et!</p>
+  </div> <div class=" ano hover col-3 "  data-aos="fade-right">
+    <i class="ti-stats-up"></i>
+    <p>Repellendus maxime</p>
+    <p style="color:#a8a9ab;font-weight:400">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis amet saepe et!</p>
+  </div> <div class=" ano hover col-3 "  data-aos="fade-right">
+    <i class="ti-location-arrow"></i>
+    <p>Sint vitae</p>
+    <p style="color:#a8a9ab;font-weight:400">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis amet saepe et!</p>
+  </div>
+</div>
+</div>
+<script>
+  $(document).ready(function(){
+    $(".hover").hover(function(){
+        // $(this).css("width","16vw");
+        $(this).css("margin-top","5px");
+        $(this).css("transition",".5s");
+        $(this).css("box-shadow", "0px 0px 11px rgb(0 0 0 / 60%)");
+    },
+    function(){
+      // $(this).css("width","15vw");
+      $(this).css("margin-top","15px");
+      $(this).css("transition","0s");
+      $(this).css("box-shadow", "0px 0px 9px #00000059");
+    });
+  })
+</script>
+<footer id="footer">
+  
+  <div class="link"  data-aos="fade-down-left">
+    <h3>USEFUL LINKS</h3>
+    <hr>
+    <div class="li">
+      <ul>
+      <li><a href="">about</a></li>
+      <li><a href="">Services</a></li>
+      <li><a href="">Portfolio</a></li>
+      <li><a href="">testimonial</a></li>
+    </ul>
+      <ul>
+        <li><a href="">team</a> </li>
+        <li><a href="">blog</a></li>
+        <li><a href="">faq</a></li>
+        <li><a href="">privacy policy</a></li>
+      </ul>
+    </div>
+  </div>
+ 
+  <div class="con"  data-aos="fade-down-right">
+    <h3>ABOUT US</h3>
+    <hr/>
+    <!-- <img src="logo.png" alt="" sizes="20px" srcset=""> -->
+    <h3>Creative Studio</h3>
+    <p class="p1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae nobis fugit maxime deleniti minus optio accusamus, quam maiores explicabo sunt.</p>
+    <p class="p2">Copyright 2023 &copy; <span>DevCRUD</span></p>
+</div>
+</footer>
+<div class="f2"></div>
+
+
+              <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+              <!-- <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script> -->
+              <script>
+                AOS.init({
+                  delay: 100, // values from 0 to 3000, with step 50ms
+                  duration: 1000, // values from 0 to 3000, with step 50ms
+                  easing: 'ease',
+                });
+
+              </script>
+
+</body>
+
+</html>
